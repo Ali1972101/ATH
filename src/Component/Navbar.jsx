@@ -66,11 +66,12 @@ const Navbar = () => {
             to="/discuss"
             onClick={() => setIsOpen(false)}
             className="mobile-only-btn"
+            style={{ textDecoration: "none" }}
           >
             <Button name="Let's Discuss Your Project" className="btn4" />
           </Link>
 
-          <Link to="/contact" onClick={() => setIsOpen(false)}>
+          <Link to="/contact" onClick={() => setIsOpen(false)} style={{ textDecoration: "none" }}>
             <Button name="Contact Us" className="btn2" />
           </Link>
 
