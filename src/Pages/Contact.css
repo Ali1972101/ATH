@@ -171,6 +171,6 @@ textarea {
 
 @media (max-width: 768px) {
   .section2 {
-  display: none;
-}
+    display: none;
+  }
 }

@@ -63,14 +63,7 @@ const Discuss = () => {
                     className="btn5"
                   />
 
-                  <div
-                    style={{
-                      display: "flex",
-                      alignItems: "center",
-                      gap: "2px",
-                      marginLeft: "20px",
-                    }}
-                  >
+                  <div className="tiki">
                     <CornerLeftUp color="#3b82f6" size={15} />
                     <p className="tit">I'm just a message away!</p>
                   </div>

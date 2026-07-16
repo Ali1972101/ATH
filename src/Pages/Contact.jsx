@@ -13,9 +13,9 @@ import Navbar from "../Component/Navbar";
 const Contact = () => {
   return (
     <>
-    <Navbar />
+      <Navbar />
       <Link style={{ textDecoration: "none" }} to="/contact">
-        <section className="contact" style={{overflow:'hidden'}}>
+        <section className="contact" style={{ overflow: "hidden" }}>
           <div style={{ textAlign: "center" }}>
             <h1>Get In Touch</h1>
             <p>
@@ -63,7 +63,7 @@ const Contact = () => {
           </section>
         </section>
 
-        <section className="section2" style={{overflow:'hidden'}}>
+        <section className="section2" style={{ overflow: "hidden" }}>
           <div className="sub-sec">
             <h1 style={{ textAlign: "center", padding: "20px" }}>Contact Us</h1>
             <div>
@@ -75,7 +75,14 @@ const Contact = () => {
                 }}
               >
                 {" "}
-                <img style={{border : "1px solid white" , backgroundColor: "white"}} src={phone} alt="" />
+                <img
+                  style={{
+                    border: "1px solid white",
+                    backgroundColor: "white",
+                  }}
+                  src={phone}
+                  alt=""
+                />
                 +234 9060898649{" "}
               </h1>
               <h1
@@ -86,8 +93,18 @@ const Contact = () => {
                 }}
               >
                 {" "}
-                <img style={{border : "1px solid white" , backgroundColor: "white", width: "30px", height: "30px", padding : "2px"  }} src={mail} alt="" />
-              Alitechhub@gmail.com{" "}
+                <img
+                  style={{
+                    border: "1px solid white",
+                    backgroundColor: "white",
+                    width: "30px",
+                    height: "30px",
+                    padding: "2px",
+                  }}
+                  src={mail}
+                  alt=""
+                />
+                Alitechhub@gmail.com{" "}
               </h1>
               <h1
                 style={{
@@ -97,7 +114,14 @@ const Contact = () => {
                 }}
               >
                 {" "}
-                <img style={{border : "1px solid white" , backgroundColor: "white", }} src={location} alt="" />
+                <img
+                  style={{
+                    border: "1px solid white",
+                    backgroundColor: "white",
+                  }}
+                  src={location}
+                  alt=""
+                />
                 Abuja,Nigeria{" "}
               </h1>
               <h1> </h1>
