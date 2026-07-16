@@ -1,0 +1,304 @@
+.curved-underline {
+  position: relative;
+  display: inline-block;
+}
+
+.curved-underline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0px; /* Adjust vertical distance */
+  width: 100%;
+  height: 20px; /* Thickness of the curve */
+  border-bottom: 5px solid greenyellow; /* Color of the underline */
+  border-radius: 100%; /* Creates the arc effect */
+  /* background-color: greenyellow; */
+}
+
+.discuss-main {
+  /* border: 1px solid white; */
+  /* border-radius: 10px; */
+  /* box-shadow: white 0px 3px 5px; */
+  padding: 20px;
+  /* background-color: black; */
+  /* width: 50%; */
+  /* height: 220%; */
+  font-size: 35px;
+  font-weight: 800;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+.discuss-main img {
+  width: 30px;
+  height: 40px;
+  border: 2px solid black;
+  border-radius: 10px;
+  box-shadow: white 0px 3px 5px;
+}
+
+.discuss-main {
+  display: flex;
+  /* justify-content: center; */
+  gap: 40px;
+  font-size: 11px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  margin-left: 10%;
+}
+
+.discuss-m {
+  /* display: flex; */
+  /* justify-content: center; */
+  align-items: center;
+  gap: 20px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  margin-left: 15%;
+}
+
+.discuss {
+  background-color: whitesmoke;
+  padding: 50px;
+  background-image: url("../assets/site.avif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  filter: brightness(100%);
+  color: white;
+}
+
+.short-line {
+  width: 2px;
+  height: 20px;
+  background-color: yellowgreen;
+  display: inline-block;
+  margin: 0 10px;
+  vertical-align: middle;
+  border: none;
+  /* color: yellowgreen; */
+}
+
+.tit {
+  font-family: "Brush Script MT", cursive;
+  font-style: italic;
+  font-size: 17px;
+}
+
+.fast {
+  display: flex;
+  /* justify-content: center; */
+  gap: 20px;
+  margin-top: 30px;
+  /* margin-bottom: 50%; */
+  padding: 15px;
+  border: 0.5px solid white;
+  border-radius: 30px;
+  box-shadow: black 0px 5px 5px;
+  background-color: black;
+  /* justify-content: space-between; */
+  /* width: 80%; */
+  justify-content: center;
+  align-items: center;
+  margin-left: 10%;
+}
+
+.short {
+  width: 2px;
+  height: 50px;
+  background-color: yellowgreen;
+  display: inline-block;
+  margin: 0 10px;
+  vertical-align: middle;
+  border: none;
+  /* color: yellowgreen; */
+  margin-left: 100px;
+}
+
+.pappy {
+  margin-top: 4%;
+  width: 65%;
+  height: 110%;
+  /* border-radius: 50%; */
+  margin-left: 25%;
+  /* border: 2px solid black; */
+  border-radius: 10px;
+  /* box-shadow: white 0px 3px 5px; */
+  /* background-color: pink; */
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  margin: 20px;
+  font-family: sans-serif;
+}
+.form2 input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  /* width: 100%; */
+}
+
+.form2 textarea {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  width: 100%;
+  height: 100px;
+  /* margin-top: 20px; */
+}
+
+.dropdown-icon {
+  position: absolute;
+  left: 36%;
+  top: 51.5%;
+  transform: translateY(-50%);
+  color: #999;
+  pointer-events: none;
+}
+
+.form-holder {
+  border: 1px solid white;
+  border-radius: 10px;
+  box-shadow: white 0px 3px 5px;
+  padding: 20px;
+  background-color: black;
+  /* width: 50%; */
+  /* height: 220%; */
+  font-size: 15px;
+  font-weight: 500;
+  /* display: flex; */
+  /* flex-direction: column; */
+  gap: 10px;
+}
+
+.form2 {
+  display: flex;
+  /* flex-direction: column; */
+  gap: 50px;
+  justify-content: space-between;
+}
+
+.form-holder2 {
+  border: 1px solid white;
+  border-radius: 10px;
+  box-shadow: white 0px 3px 5px;
+  padding: 20px;
+  background-color: black;
+  /* width: 50%; */
+  /* height: 220%; */
+  /* font-size: 15px; */
+  /* font-weight: 500; */
+  /* display: flex; */
+  /* flex-direction: column; */
+  gap: 10px;
+  margin-right: 10%;
+}
+.fit {
+  margin-left: 10%;
+  gap: 40px;
+  display: flex;
+  flex-direction: column;
+}
+.pipi {
+  font-size: 20px;
+  margin-top: 20px;
+}
+.area{
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .discuss {
+    padding: 0px;
+  }
+  .fit {
+    margin-left: 0%;
+    /* gap: 40px; */
+    display: flex;
+    flex-direction: column;
+  }
+  .discuss-main {
+    font-size: 20px;
+  }
+  .discuss-m {
+    margin-left: 10%;
+  }
+  .fast {
+    flex-direction: column;
+  }
+  .short {
+    margin-left: 0px;
+  }
+  .form2 {
+    flex-direction: column;
+  }
+  .form-holder {
+    width: 95%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+  .form-holder2 {
+    width: 95%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+  .pappy {
+    display: none;
+  }
+
+  .shit {
+    font-size: 15px;
+    margin-top: 0px;
+    /* font-weight: 800; */
+  }
+  .pipi {
+    font-size: 20px;
+    width: 80%;
+    margin-top: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: yellowgreen;
+    background-image: linear-gradient(
+      to right,
+      white,
+      yellowgreen,
+      rgb(255, 0, 0),
+      rgb(255, 0, 255),
+      rgb(255, 0, 255)
+    );
+
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    color: transparent;
+  }
+
+  .liki{
+    margin-top: 20px;
+  }
+  .form-holder2{
+    display:none;
+  }
+  .discuss-main{
+    display:none;
+
+  }
+
+  .fast{
+    display: none;
+  }
+}

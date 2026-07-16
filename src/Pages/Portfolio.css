@@ -1,0 +1,54 @@
+.frontend {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  gap: 10px;
+   border: 0.5px solid white;
+  border-radius: 30px;
+  box-shadow: black 0px 5px 5px;
+  width: 30%;
+  margin-top: 30px;
+  background-color: black;
+}
+
+.frontend img {
+  width: 20%;
+  margin-top: 25px;
+ 
+}
+
+.conti{
+ 
+  background-image: url("../assets/site.avif") !important ;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  filter: brightness(100%);
+  color: white;
+
+ 
+}
+
+@media (max-width: 768px){
+    .frontend{
+        width: 100%;
+        height: 100%;
+        font-size: 15px;
+        font-weight: 500;
+    }
+    .frontend img{
+        width: 20%;
+        margin-top: 25px;
+    }
+    .conti{
+        padding: 20px;
+    }
+    .yell{
+        flex-direction: column;
+    }
+    .about{
+        color: greenyellow;
+    }
+  
+}   

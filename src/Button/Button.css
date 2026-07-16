@@ -1,0 +1,46 @@
+.btn3 {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border: 0.5px solid white;
+  border-radius: 30px;
+  box-shadow: black 0px 5px 5px;
+}
+
+.btn2 {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border: 0.5px solid white;
+  border-radius: 30px;
+  box-shadow: black 0px 5px 5px;
+}
+
+.btn4 {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border: 0.5px solid white;
+  border-radius: 30px;
+  box-shadow: black 0px 5px 5px;
+}
+
+.btn5 {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border: 0.5px solid white;
+  border-radius: 10px;
+  box-shadow: black 0px 5px 5px;
+}
+
+.btn6 {
+  background-color: black;
+  color: white;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  width: 100%;
+  margin-top: 20px;
+}
