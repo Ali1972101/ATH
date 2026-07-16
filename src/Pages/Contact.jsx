@@ -1,7 +1,6 @@
 import React from "react";
 import "./Contact.css";
 import Button from "../Button/Button";
-import Avatar from "../assets/avatar.png";
 import { Link } from "react-router-dom";
 import facebook from "../assets/icon-facebook.svg";
 import twitter from "../assets/icon-twitter.svg";

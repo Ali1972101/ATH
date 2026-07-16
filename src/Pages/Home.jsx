@@ -2,8 +2,6 @@ import React from "react";
 import "./Home.css";
 import { Link } from "react-router-dom";
 import Button from "../Button/Button";
-import site from "../assets/site.avif";
-import laptop from "../assets/laptop.jpg";
 import Avatar from "../assets/Avatar.png";
 import Navbar from "../Component/Navbar";
 
