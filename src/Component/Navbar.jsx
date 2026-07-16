@@ -32,7 +32,11 @@ const Navbar = () => {
         <div className={`nav-links ${isOpen ? "active" : ""}`}>
           <ul>
             <li>
-              <Link to="/" style={{ textDecoration: "none", color: "inherit" }} onClick={() => setIsOpen(false)}>
+              <Link
+                to="/"
+                style={{ textDecoration: "none", color: "inherit" }}
+                onClick={() => setIsOpen(false)}
+              >
                 Home
               </Link>
             </li>
@@ -58,11 +62,15 @@ const Navbar = () => {
           </ul>
         </div>
         <div className={`bt ${isOpen ? "active" : ""}`}>
-          <Link to="/discuss" onClick={() => setIsOpen(false)} className="mobile-only-btn" style={{ textDecoration: "none" }}>
+          <Link
+            to="/discuss"
+            onClick={() => setIsOpen(false)}
+            className="mobile-only-btn"
+          >
             <Button name="Let's Discuss Your Project" className="btn4" />
           </Link>
 
-          <Link to="/contact" onClick={() => setIsOpen(false)} style={{ textDecoration: "none" }}>
+          <Link to="/contact" onClick={() => setIsOpen(false)}>
             <Button name="Contact Us" className="btn2" />
           </Link>
 
