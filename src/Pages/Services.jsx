@@ -9,6 +9,9 @@ import perform from "../assets/perform.png";
 import fot from "../assets/fot.png";
 import Button from "../Button/Button";
 import Navbar from "../Component/Navbar";
+import facebook from "../assets/icon-facebook.svg";
+import twitter from "../assets/icon-twitter.svg";
+import instagram from "../assets/icon-instagram.svg";
 const Service = () => {
   return (
     <>
@@ -176,6 +179,29 @@ const Service = () => {
 
           {/* <Button name="Join Now" className="btn2" /> */}
         </div>
+        <div className="social">
+                  <Link
+                    to="https://www.facebook.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img src={facebook} alt="" />
+                  </Link>
+                  <Link
+                    to="https://www.x.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img src={twitter} alt="" />
+                  </Link>
+                  <Link
+                    to="https://www.instagram.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img src={instagram} alt="" />
+                  </Link>
+                </div>
       </section>
     </>
   );
