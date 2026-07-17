@@ -9,6 +9,9 @@ import phone from "../assets/phone.png";
 import mail from "../assets/email.svg";
 import location from "../assets/location.png";
 import Navbar from "../Component/Navbar";
+import facebookk from "../assets/icon-facebook.svg";
+import twitterr from "../assets/icon-twitter.svg";
+import instagramm from "../assets/icon-instagram.svg";
 
 const Contact = () => {
   return (
@@ -61,6 +64,29 @@ const Contact = () => {
               <Button name="Send Message" className="btn3" />
             </div>
           </section>
+          <div className="social">
+                    <Link
+                      to="https://www.facebook.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img src={facebookk} alt="" />
+                    </Link>
+                    <Link
+                      to="https://www.x.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img src={twitterr} alt="" />
+                    </Link>
+                    <Link
+                      to="https://www.instagram.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img src={instagramm} alt="" />
+                    </Link>
+                  </div>
         </section>
 
         <section className="section2" style={{ overflow: "hidden" }}>
