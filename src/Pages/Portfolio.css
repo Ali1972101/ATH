@@ -36,19 +36,23 @@
         height: 100%;
         font-size: 15px;
         font-weight: 500;
+        display: none;
     }
     .frontend img{
         width: 20%;
         margin-top: 25px;
     }
     .conti{
-        padding: 20px;
+        padding: 0;
     }
     .yell{
         flex-direction: column;
     }
     .about{
         color: greenyellow;
+    }
+    .w{
+      display: none;
     }
   
 }   

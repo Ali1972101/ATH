@@ -3,22 +3,33 @@ import "./Navbar.css";
 import Logo from "../assets/LOGO.png";
 import Button from "../Button/Button";
 import { Link } from "react-router-dom";
+import ATH from "../assets/ATHNEW.PNG";
+import LanguagesModal from "./LanguagesModal";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const toggle = () => {
     setIsOpen(!isOpen);
   };
 
+  const handleOpenLanguages = () => {
+    setIsOpen(false);
+    setIsModalOpen(true);
+  };
+
   return (
     <>
+      {/* Top Navigation Bar */}
       <div className="navbar">
         <div className="logo">
-          <img src={Logo} alt="Logo" />
+          <Link to="/">
+            <img style={{ width: "90px", height: "80px", objectFit: "contain" }} src={ATH} alt="Logo" />
+          </Link>
         </div>
 
-        <button
+        <button 
           onClick={toggle}
           style={{ background: "transparent", border: "none" }}
         >
@@ -50,6 +61,7 @@ const Navbar = () => {
                 Services
               </Link>
             </li>
+
             <li>
               <Link
                 to="/portfolio"
@@ -59,8 +71,13 @@ const Navbar = () => {
                 Portfolio
               </Link>
             </li>
+
+            <li onClick={handleOpenLanguages} style={{ cursor: "pointer" }}>
+              Languages
+            </li>
           </ul>
         </div>
+
         <div className={`bt ${isOpen ? "active" : ""}`}>
           <Link
             to="/discuss"
@@ -71,13 +88,17 @@ const Navbar = () => {
             <Button name="Let's Discuss Your Project" className="btn4" />
           </Link>
 
-          <Link to="/contact" onClick={() => setIsOpen(false)} style={{ textDecoration: "none" }}>
+          <Link
+            to="/contact"
+            onClick={() => setIsOpen(false)}
+            style={{ textDecoration: "none" }}
+          >
             <Button name="Contact Us" className="btn2" />
           </Link>
-
-          {/* <Button name="Join Now" className="btn2" /> */}
         </div>
       </div>
+
+      <LanguagesModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
     </>
   );
 };

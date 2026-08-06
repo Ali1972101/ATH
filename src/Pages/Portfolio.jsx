@@ -5,56 +5,26 @@ import frontendimg from "../assets/frontendimg.webp";
 import backendimg from "../assets/backendimg.webp";
 import appdev from "../assets/appdev.png";
 import Navbar from "../Component/Navbar";
+import Resume from "../Component/Resume";
+
 const Portfolio = () => {
   return (
     <>
     <Navbar />
       <section style={{ justifyItems: "center" }} className="conti">
-        <div>
-          <h1 className="out"
-            style={{
-              textAlign: "center",
-              marginBottom: "20px",
-              color: "greenyellow",
-            }}
-          >
-            About Me
-          </h1>
-          <p className="about"
-            style={{
-              marginBottom: "20px",
-              fontSize: "22px",
-              fontWeight: "400",
-            }}
-          >
-            I am a passionate tech enthusiast with a deep interest in Web and
-            App Development.
-            <br /> I possess expertise in Flutter Development, React.js, and
-            Tailwind CSS for web <br /> development, as well as Node.js and
-            Express.js for robust backend solutions.
-          </p>
-          <p className="about" style={{ fontSize: "22px", fontWeight: "400" }}>
-            Additionally, I have did internship as Flutter Developer and Java
-            Developer. <br />
-            This diverse experience has provided me with a holistic
-            understanding <br /> on front-end and back-end technologies, as well
-            as user experience, <br /> allowing me to make meaningful
-            contributions across various facets <br />
-            of technology projects.
-          </p>
-        </div>
+        <Resume />
         <main style={{ justifyItems: "center" }}>
           <h1
             style={{
               marginTop: "20px",
               padding: "10px",
               color: "greenyellow",
-            }}
+            }} className="w"
           >
             What I Do
           </h1>
           <section className="yell"
-            style={{ display: "flex", gap: "40px", justifyContent: "center" }}
+            style={{ display: "flex", gap: "40px", justifyContent: "center", }}  
           >
             <div className="frontend">
               <img src={frontendimg} alt="" />

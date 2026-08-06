@@ -1,0 +1,259 @@
+.cv-wrapper {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border-radius: 0;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial,
+    sans-serif;
+  text-align: left;
+  color: #333333;
+}
+
+/* Header styling */
+.cv-header-container {
+  display: flex;
+  background-color: #ffffff;
+  position: relative;
+}
+
+.cv-header-left {
+  width: 33%;
+  background-color: #35383f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 35px 20px 45px 20px;
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 82%, 50% 100%, 0 82%);
+  z-index: 2;
+}
+
+.cv-avatar {
+  width: 135px;
+  height: 135px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.cv-header-right {
+  width: 67%;
+  background-color: #35383f;
+  padding: 40px 40px 30px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cv-name {
+  color: #ffffff;
+  font-size: 40px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  margin: 0 0 6px 0;
+  line-height: 1.1;
+}
+
+.cv-title {
+  color: #d1d4d9;
+  font-size: 18px;
+  font-weight: 300;
+  margin: 0;
+}
+
+/* Body Content layout */
+.cv-body {
+  display: flex;
+  position: relative;
+}
+
+/* Left sidebar */
+.cv-left-col {
+  width: 33%;
+  background-color: #eae5e0;
+  padding: 40px 25px 35px 25px;
+  box-sizing: border-box;
+}
+
+.cv-section-title-left {
+  font-size: 18px;
+  font-weight: 700;
+  color: #2e3137;
+  margin-top: 0;
+  margin-bottom: 18px;
+}
+
+.cv-left-col .cv-section-title-left:not(:first-child) {
+  margin-top: 32px;
+}
+
+/* Contact Details */
+.cv-contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.cv-contact-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 13.5px;
+  color: #333333;
+  word-break: break-word;
+}
+
+.cv-icon-bubble {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #35383f;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.cv-icon-bubble svg {
+  width: 13px;
+  height: 13px;
+  fill: currentColor;
+}
+
+.cv-email-link {
+  color: #333333;
+  text-decoration: underline;
+}
+
+/* Education */
+.cv-education-item {
+  font-size: 13.5px;
+  line-height: 1.4;
+}
+
+.cv-degree {
+  font-weight: 700;
+  color: #2c2c2c;
+  margin-bottom: 4px;
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+}
+
+.cv-bullet-dot {
+  font-weight: bold;
+}
+
+.cv-subtext {
+  color: #555555;
+  margin: 2px 0 2px 14px;
+}
+
+/* Skills */
+.cv-skills-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 14px;
+  color: #333333;
+}
+
+/* Right main section */
+.cv-right-col {
+  width: 67%;
+  background-color: #ffffff;
+  padding: 35px 40px 35px 35px;
+  box-sizing: border-box;
+}
+
+.cv-section-title-right {
+  font-size: 22px;
+  font-weight: 700;
+  color: #2a2d34;
+  margin: 0 0 14px 0;
+  padding-bottom: 6px;
+  border-bottom: 1.5px solid #4a4d53;
+}
+
+.cv-right-col .cv-section-title-right:not(:first-child) {
+  margin-top: 32px;
+}
+
+.cv-summary-text {
+  font-size: 14.5px;
+  line-height: 1.6;
+  color: #333333;
+  margin: 0;
+}
+
+/* Experience */
+.cv-job-block {
+  margin-bottom: 22px;
+}
+
+.cv-job-block:last-child {
+  margin-bottom: 0;
+}
+
+.cv-job-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #222222;
+  margin: 0 0 4px 0;
+}
+
+.cv-job-dates {
+  font-size: 13.5px;
+  color: #888888;
+  margin-bottom: 10px;
+}
+
+.cv-bullets {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.cv-bullets li {
+  font-size: 14px;
+  line-height: 1.55;
+  color: #333333;
+  margin-bottom: 6px;
+}
+
+.cv-bullets li:last-child {
+  margin-bottom: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .cv-header-container {
+    flex-direction: column;
+  }
+  .cv-header-left {
+    width: 100%;
+    clip-path: polygon(0 0, 100% 0, 100% 88%, 50% 100%, 0 88%);
+    padding: 25px 20px 35px 20px;
+  }
+  .cv-header-right {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+  }
+  .cv-body {
+    flex-direction: column;
+  }
+  .cv-left-col,
+  .cv-right-col {
+    width: 100%;
+    padding: 25px 20px;
+  }
+}

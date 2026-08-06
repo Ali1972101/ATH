@@ -1,7 +1,27 @@
 body {
-    padding: 0;
-    margin: 0;
-    font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Smooth Page Roll-In Transition */
+.sec,
+.conti,
+.services-container,
+.contact-container,
+.discuss-container {
+  animation: rollInPage 0.45s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes rollInPage {
+  0% {
+    opacity: 0;
+    transform: translateY(35px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .poppins-thin {
