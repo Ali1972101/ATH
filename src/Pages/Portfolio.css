@@ -18,7 +18,7 @@
 }
 
 .conti{
- 
+  padding-top: 100px;
   background-image: url("../assets/site.avif") !important ;
   background-size: cover;
   background-position: center;
@@ -26,8 +26,6 @@
   background-attachment: fixed;
   filter: brightness(100%);
   color: white;
-
- 
 }
 
 @media (max-width: 768px){

@@ -2,6 +2,21 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Poppins", sans-serif;
+  background-attachment: fixed !important;
+}
+
+/* Global Fixed Background & Smooth Page Roll-In Transition */
+.sec,
+.conti,
+.services-container,
+.contact-container,
+.discuss-container,
+.discuss-page-wrapper,
+.languages-page-wrapper {
+  background-attachment: fixed !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
 }
 
 /* Smooth Page Roll-In Transition */
