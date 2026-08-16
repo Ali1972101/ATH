@@ -78,6 +78,20 @@ const Navbar = () => {
         </div>
       </button>
 
+      {/* Floating Dark Contact/Message Button (Bottom Left - Matching Screenshot) */}
+      <button
+        className="floating-contact-btn"
+        onClick={() => handleNavigate("/contact")}
+        aria-label="Contact Us"
+      >
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#a3c1e2" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <rect x="6" y="6" width="15" height="12" rx="2" />
+          <path d="M6 8l7.5 5.5L21 8" />
+          <line x1="1" y1="10" x2="4" y2="10" />
+          <line x1="1" y1="14" x2="3" y2="14" />
+        </svg>
+      </button>
+
       {/* Radial / Arc Floating Menu Overlay (Matching Screenshot 1-to-1) */}
       <div
         className={`floating-arc-overlay ${isOpen ? "active" : ""}`}
@@ -156,20 +170,6 @@ const Navbar = () => {
               </svg>
             </div>
             <span className="arc-item-label">RESUME</span>
-          </div>
-
-          {/* DISCUSS */}
-          <div
-            className="arc-menu-item arc-contact"
-            onClick={() => handleNavigate("/discuss")}
-          >
-            <div className="arc-icon-wrap">
-              <svg width="46" height="46" viewBox="0 0 64 64" fill="none">
-                <rect x="12" y="16" width="40" height="32" rx="6" fill="#A7F3D0" stroke="#059669" strokeWidth="3" />
-                <path d="M14 20L32 34L50 20" stroke="#059669" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
-              </svg>
-            </div>
-            <span className="arc-item-label">CONTACT US</span>
           </div>
         </div>
       </div>

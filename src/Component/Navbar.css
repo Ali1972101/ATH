@@ -172,34 +172,51 @@
   text-transform: uppercase;
 }
 
+/* Floating Dark Contact Button (Bottom Left - Matching Screenshot) */
+.floating-contact-btn {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  left: 25px;
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  background-color: #0c121d;
+  border: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 99999;
+  cursor: pointer;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  transition: transform 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275), background-color 0.25s ease;
+}
+
+.floating-contact-btn:hover {
+  transform: scale(1.1);
+}
+
 .arc-menu-container.visible .arc-profile {
-  bottom: 270px;
-  right: 25px;
+  bottom: 250px;
+  right: 35px;
   transition-delay: 0.05s;
 }
 
 .arc-menu-container.visible .arc-languages {
-  bottom: 235px;
-  right: 130px;
+  bottom: 210px;
+  right: 145px;
   transition-delay: 0.1s;
 }
 
 .arc-menu-container.visible .arc-projects {
-  bottom: 155px;
-  right: 210px;
+  bottom: 125px;
+  right: 215px;
   transition-delay: 0.15s;
 }
 
 .arc-menu-container.visible .arc-resume {
-  bottom: 45px;
-  right: 240px;
+  bottom: 15px;
+  right: 220px;
   transition-delay: 0.2s;
-}
-
-.arc-menu-container.visible .arc-contact {
-  bottom: 20px;
-  right: 130px;
-  transition-delay: 0.25s;
 }
 
 @media (max-width: 768px) {
@@ -216,7 +233,8 @@
   .desktop-only-bt {
     display: none !important;
   }
-  .floating-hamburger-btn {
+  .floating-hamburger-btn,
+  .floating-contact-btn {
     display: flex !important;
   }
   .icon-hamburger {
