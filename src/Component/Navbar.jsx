@@ -81,8 +81,8 @@ const Navbar = () => {
       {/* Floating Dark Contact/Message Button (Bottom Left - Matching Screenshot) */}
       <button
         className="floating-contact-btn"
-        onClick={() => handleNavigate("/contact")}
-        aria-label="Contact Us"
+        onClick={() => handleNavigate("/discuss")}
+        aria-label="Discuss Project"
       >
         <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#a3c1e2" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <rect x="6" y="6" width="15" height="12" rx="2" />
