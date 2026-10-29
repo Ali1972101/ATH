@@ -58,10 +58,10 @@ const Resume = () => {
           <div className="cv-education-item">
             <div className="cv-degree">
               <span className="cv-bullet-dot">•</span>
-              <span>Bachelor of Science in Computer Science</span>
+              <span>Higher National Diploma in Computer Science</span>
             </div>
-            <div className="cv-subtext">Stanford University</div>
-            <div className="cv-subtext">2017 - 2021</div>
+            <div className="cv-subtext">Federal Polytechnic, Auchi</div>
+            <div className="cv-subtext">2021 - 2023</div>
           </div>
 
           {/* Skills */}
@@ -72,7 +72,7 @@ const Resume = () => {
             <li>JavaScript - Expert</li>
             <li>jQuery - Expert</li>
             <li>AJAX - Expert</li>
-            <li>PHP - Expert</li>
+            
           </ul>
         </div>
 
@@ -90,16 +90,16 @@ const Resume = () => {
           <h2 className="cv-section-title-right">Work Experience</h2>
           
           <div className="cv-job-block">
-            <h3 className="cv-job-title">Web Developer, Treutel - Jaskolski</h3>
-            <div className="cv-job-dates">March 2023 - Present</div>
+            <h3 className="cv-job-title">Web Developer, NEOCLOUD </h3>
+            <div className="cv-job-dates">Jan 2025 - Present</div>
             <ul className="cv-bullets">
               <li>
                 Developed a wide range of websites using HTML, CSS, JavaScript,
-                jQuery, and PHP.
+                and jQuery.
               </li>
               <li>
                 Designed and implemented a website for a large online retailer,
-                resulting in a 300% increase in sales.
+                resulting in a 300% increase in sales. 
               </li>
               <li>
                 Developed and maintained web applications for a variety of
@@ -109,9 +109,9 @@ const Resume = () => {
           </div>
 
           <div className="cv-job-block">
-            <h3 className="cv-job-title">Web Developer, Gorczany - Hudson</h3>
-            <div className="cv-job-dates">May 2021 - February 2023</div>
-            <ul className="cv-bullets">
+            <h3 className="cv-job-title">Web Developer, Teckcocon</h3>
+            <div className="cv-job-dates">Nov 2023 - May 2024</div>
+            <ul className="cv-bullets"> 
               <li>
                 Participated in the full software development life cycle, from
                 requirements gathering to final deployment.
@@ -121,7 +121,7 @@ const Resume = () => {
                 successful integration of web applications.
               </li>
               <li>Optimized websites for maximum speed and scalability.</li>
-            </ul>
+            </ul> 
           </div>
 
           {/* References */}

@@ -26,7 +26,7 @@ const Navbar = () => {
 
   return (
     <>
-      {/* Desktop & Mobile Navbar */}
+    
       <div className="navbar">
         <div className="logo">
           <Link to="/">
@@ -113,7 +113,7 @@ const Navbar = () => {
                 <path d="M22 22C22 15.3726 26.4772 10 32 10C37.5228 10 42 15.3726 42 22C42 22.5 41.5 24 41.5 24C39 20 35 18 32 18C29 18 25 20 22.5 24C22.5 24 22 22.5 22 22Z" fill="#F97316" />
               </svg>
             </div>
-            <span className="arc-item-label">PROFILE</span>
+            <span className="arc-item-label">HOME</span>
           </div>
 
           {/* LANGUAGES */}
